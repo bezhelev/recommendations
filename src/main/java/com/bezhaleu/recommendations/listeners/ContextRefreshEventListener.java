@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ContextRefreshEventListener {
 
-    private CsvRepository baseCsvRepositories;
+    private final CsvRepository baseCsvRepositories;
 
     public ContextRefreshEventListener(CsvRepository baseCsvRepositories) {
         this.baseCsvRepositories = baseCsvRepositories;
